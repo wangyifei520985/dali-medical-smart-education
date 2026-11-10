@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>教师空间｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="space-teacher">
+  <div class="space-shell">
+    <aside class="space-sidebar">
+      <h2>教师空间</h2>
+      <p>课程教学 · 学情分析 · 教研协作</p>
+      <nav>
+        <a class="active" href="space/teacher.html"><i data-lucide="layout-dashboard"></i>教学首页</a>
+        <a href="teacher.html"><i data-lucide="presentation"></i>智慧备课</a>
+        <a href="knowledge.html"><i data-lucide="library-big"></i>课程资源</a>
+        <a href="space/teacher.html#students"><i data-lucide="users-round"></i>学情分析</a>
+        <a href="space/teacher.html#studio"><i data-lucide="messages-square"></i>虚拟教研室</a>
+        <a href="index.html"><i data-lucide="house"></i>返回中心</a>
+      </nav>
+    </aside>
+    <section class="space-content" style="--space-cover:url('../assets/covers/teacher.svg')">
+      <header class="space-topbar">
+        <div><h1>教学首页</h1><p>本周课程运行正常，有 2 个学情预警需要关注。</p></div>
+        <button class="button primary" type="button" data-toast="已创建教研活动演示">发起教研活动</button>
+      </header>
+      <div class="dashboard-grid">
+        <article class="dashboard-card"><span>授课课程</span><strong>4</strong><p>覆盖 3 个课程群</p></article>
+        <article class="dashboard-card"><span>待批阅任务</span><strong>36</strong><p>病例报告与技能评价</p></article>
+        <article class="dashboard-card"><span>课程达成度</span><strong>84%</strong><p>较上学期提升 3%</p></article>
+        <article class="dashboard-card"><span>教研活动</span><strong>2</strong><p>本周虚拟教研室会议</p></article>
+        <article class="dashboard-card wide" id="students">
+          <span>学情观察</span>
+          <div class="progress-list">
+            <div class="progress-row"><span>知识掌握度</span><div class="progress-track"><i style="width:82%"></i></div><b>82%</b></div>
+            <div class="progress-row"><span>课堂参与度</span><div class="progress-track"><i style="width:74%"></i></div><b>74%</b></div>
+            <div class="progress-row"><span>病例推理能力</span><div class="progress-track"><i style="width:68%"></i></div><b>68%</b></div>
+          </div>
+        </article>
+        <article class="dashboard-card wide" id="studio">
+          <span>虚拟教研室动态</span>
+          <div class="activity-list">
+            <div class="activity-row"><b>临床诊断与技术群</b><span>OSCE站点标准统一讨论</span><em>今天 10:00</em></div>
+            <div class="activity-row"><b>结构与功能基础群</b><span>3D解剖资源评审</span><em>11 月 8 日</em></div>
+            <div class="activity-row"><b>课程思政案例库</b><span>医德医风案例共建</span><em>11 月 6 日</em></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

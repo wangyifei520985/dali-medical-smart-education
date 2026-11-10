@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>学生空间｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="space-student">
+  <div class="space-shell">
+    <aside class="space-sidebar">
+      <h2>学生空间</h2>
+      <p>大理大学医学智慧教育平台</p>
+      <nav>
+        <a class="active" href="space/student.html"><i data-lucide="layout-dashboard"></i>学习首页</a>
+        <a href="knowledge.html"><i data-lucide="book-open"></i>课程学习</a>
+        <a href="clinical.html"><i data-lucide="stethoscope"></i>临床训练</a>
+        <a href="personal.html"><i data-lucide="route"></i>学习路径</a>
+        <a href="project.html"><i data-lucide="folder-kanban"></i>我的项目</a>
+        <a href="index.html"><i data-lucide="house"></i>返回中心</a>
+      </nav>
+    </aside>
+    <section class="space-content" style="--space-cover:url('../assets/covers/personal.svg')">
+      <header class="space-topbar">
+        <div><h1>学习首页</h1><p>今天的学习建议已根据课程进度与能力画像更新。</p></div>
+        <button class="button primary" type="button" data-toast="已开始今日学习任务">开始今日学习</button>
+      </header>
+      <div class="dashboard-grid">
+        <article class="dashboard-card"><span>本周学习时长</span><strong>8.5h</strong><p>较上周增加 1.2 小时</p></article>
+        <article class="dashboard-card"><span>课程完成度</span><strong>72%</strong><p>结构与功能基础群进度领先</p></article>
+        <article class="dashboard-card"><span>待完成项目</span><strong>3</strong><p>2 个项目等待小组提交</p></article>
+        <article class="dashboard-card"><span>能力达成度</span><strong>78%</strong><p>临床推理为当前重点</p></article>
+        <article class="dashboard-card wide">
+          <span>阶段学习进度</span>
+          <div class="progress-list">
+            <div class="progress-row"><span>基础医学</span><div class="progress-track"><i style="width:86%"></i></div><b>86%</b></div>
+            <div class="progress-row"><span>临床诊断</span><div class="progress-track"><i style="width:72%"></i></div><b>72%</b></div>
+            <div class="progress-row"><span>临床实践</span><div class="progress-track"><i style="width:61%"></i></div><b>61%</b></div>
+            <div class="progress-row"><span>执业考试</span><div class="progress-track"><i style="width:68%"></i></div><b>68%</b></div>
+          </div>
+        </article>
+        <article class="dashboard-card wide">
+          <span>最近学习</span>
+          <div class="activity-list">
+            <div class="activity-row"><b>临床诊断与技术群</b><span>标准化病人问诊训练</span><em>今天 14:20</em></div>
+            <div class="activity-row"><b>医师智脑执业中心</b><span>急性胸痛病例推演</span><em>昨天 19:10</em></div>
+            <div class="activity-row"><b>项目式学习</b><span>社区慢病管理方案</span><em>11 月 7 日</em></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

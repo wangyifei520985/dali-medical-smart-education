@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大理大学医学智慧教育平台个性化学习，依据画像、目标共创、智能执行、阶段诊断和动态调控生成一人一案。">
+  <title>个性化学习｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="personal">
+  <div data-site-header></div>
+
+  <main>
+    <section class="section personal-intro">
+      <div class="container">
+        <div class="personal-engine-stage reveal" style="--personal-cover:url('../assets/covers/personal.svg')">
+          <div class="personal-engine-copy">
+            <div class="page-kicker">PERSONALIZED LEARNING ENGINE</div>
+            <h1>个性化学习引擎</h1>
+            <p>基于医学知识基础、能力基线、职业倾向与阶段目标，形成“画像、目标共创、智能执行、阶段诊断、动态调控”的闭环，最终生成可执行、可评价、可更新的专属培养方案。</p>
+            <div class="engine-quick-steps">
+              <span><b>01</b>能力画像</span>
+              <span><b>02</b>目标共创</span>
+              <span><b>03</b>智能执行</span>
+              <span><b>04</b>阶段诊断</span>
+              <span><b>05</b>动态调控</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="#learning-assessment">开始个性化诊断 <i data-lucide="arrow-down"></i></a>
+              <a class="button soft" href="#one-plan">查看一生一案</a>
+            </div>
+          </div>
+          <div class="personal-engine-visual" aria-label="个性化学习引擎抽象视觉">
+            <div class="engine-ring r1"></div>
+            <div class="engine-ring r2"></div>
+            <div class="engine-ring r3"></div>
+            <div class="engine-core"><span>医</span><small>智能引擎</small></div>
+            <span class="engine-sat s1">画像</span>
+            <span class="engine-sat s2">目标</span>
+            <span class="engine-sat s3">执行</span>
+            <span class="engine-sat s4">诊断</span>
+            <span class="engine-sat s5">调控</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="learning-assessment">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">LEARNING DIAGNOSIS</div>
+            <h2>学情诊断与目标共创</h2>
+            <p>完成演示测评后，系统会依据本地规则生成基础医学、临床病例、技能与执业考试的学习组合。</p>
+          </div>
+        </div>
+        <div class="assessment-shell reveal" data-assessment>
+          <aside class="assessment-side">
+            <h3>学习引擎</h3>
+            <p>从学习目标到专属培养方案。</p>
+            <ol class="step-list">
+              <li class="active" data-step="0"><i>1</i><span>学习目标</span></li>
+              <li data-step="1"><i>2</i><span>现有基础</span></li>
+              <li data-step="2"><i>3</i><span>生成方案</span></li>
+            </ol>
+          </aside>
+          <div class="assessment-main">
+            <div class="page-kicker">ASSESSMENT 01 / 03</div>
+            <h2 data-question-title>面对一个新的临床问题，你会优先怎么做？</h2>
+            <p>根据你的真实学习习惯选择即可，答案只用于演示个性化路径生成。</p>
+            <div class="answer-grid" data-question-options></div>
+            <div class="assessment-footer">
+              <button class="button soft" type="button" data-assessment-prev>上一步</button>
+              <button class="button primary" type="button" data-assessment-next>下一题</button>
+            </div>
+            <div class="result-panel" data-assessment-result>
+              <h3>你的个性化学习方案已生成</h3>
+              <p class="muted" style="font-size:11px;line-height:1.7">建议先完成基础医学知识回顾，再进入临床病例推演和执业能力测评。</p>
+              <div class="result-grid">
+                <div><b>临床推理</b><span>推荐 4 个病例任务 · 约 6 学时</span></div>
+                <div><b>知识补强</b><span>推荐 3 个知识单元 · 约 4 学时</span></div>
+                <div><b>实践训练</b><span>推荐 2 个技能站点 · 约 3 学时</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="one-plan">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">ONE STUDENT, ONE PLAN</div>
+            <h2>一生一案</h2>
+            <p>把能力基线与职业倾向组合为专属培养方案，路径不再来自统一模板，而是随专业方向、学习表现和阶段目标持续更新。</p>
+          </div>
+          <button class="button soft" type="button" data-toast="已切换职业倾向：临床医师方向">切换职业倾向</button>
+        </div>
+        <div class="one-plan-grid">
+          <article class="one-plan-card reveal">
+            <span class="info-card__icon"><i data-lucide="radar"></i></span>
+            <h3>能力基线</h3>
+            <p>从知识、技能、临床思维、沟通与人文素养五个维度建立起点画像。</p>
+            <div class="mini-bars">
+              <div><span>医学知识</span><i><b style="width:86%"></b></i><em>86%</em></div>
+              <div><span>临床推理</span><i><b style="width:72%"></b></i><em>72%</em></div>
+              <div><span>技能操作</span><i><b style="width:64%"></b></i><em>64%</em></div>
+            </div>
+          </article>
+          <article class="one-plan-card reveal">
+            <span class="info-card__icon"><i data-lucide="compass"></i></span>
+            <h3>职业倾向</h3>
+            <p>结合岗位能力图谱分析发展方向，形成临床、护理、预防或基层医疗等偏好。</p>
+            <div class="tags"><span>临床医师</span><span>基层医疗</span><span>公共卫生</span><span>继续深造</span></div>
+          </article>
+          <article class="one-plan-card reveal">
+            <span class="info-card__icon"><i data-lucide="route"></i></span>
+            <h3>专属培养方案</h3>
+            <p>按阶段组织课程、病例、技能、项目和考试测评，明确先后关系与完成标准。</p>
+            <div class="plan-route"><span>先修</span><i data-lucide="arrow-right"></i><span>核心</span><i data-lucide="arrow-right"></i><span>实践</span><i data-lucide="arrow-right"></i><span>测评</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">RESOURCE HUB</div>
+            <h2>资源中枢</h2>
+            <p>为资源建立知识点、能力点与胜任力标签，实现“资源找人”，让课程、病例、实验与题库主动进入学习路径。</p>
+          </div>
+        </div>
+        <div class="resource-hub-grid">
+          <article class="resource-hub-card reveal"><i data-lucide="book-open-check"></i><b>知识点资源</b><span>课程微课、数字教材、图谱与自测题</span></article>
+          <article class="resource-hub-card reveal"><i data-lucide="brain-circuit"></i><b>能力点资源</b><span>病例推演、临床决策、操作规范与反思任务</span></article>
+          <article class="resource-hub-card reveal"><i data-lucide="badge-check"></i><b>胜任力资源</b><span>岗位标准、执业考试、项目成果与过程评价</span></article>
+          <article class="resource-hub-card reveal"><i data-lucide="scan-search"></i><b>资源找人</b><span>根据缺口自动推荐内容、顺序、练习与反馈</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">FULL-CYCLE PORTRAIT</div>
+            <h2>全周期画像与达成度</h2>
+            <p>以定量测评和定性过程证据两源合成四维画像，连接课程达成度、毕业达成度与毕业后五年发展追踪。</p>
+          </div>
+        </div>
+        <div class="cycle-grid">
+          <article class="cycle-card reveal"><small>01</small><h3>定量数据</h3><p>考试、测评、技能站点、作业与项目评分。</p></article>
+          <article class="cycle-card reveal"><small>02</small><h3>定性证据</h3><p>病例反思、教师反馈、同伴评价与临床观察。</p></article>
+          <article class="cycle-card reveal"><small>03</small><h3>四维画像</h3><p>知识、能力、素养、发展四个维度持续更新。</p></article>
+          <article class="cycle-card reveal"><small>04</small><h3>达成度追踪</h3><p>课程目标、毕业要求与毕业后五年发展关联。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">IMMERSIVE LEARNING SPACE</div>
+            <h2>虚实融合学习空间</h2>
+            <p>以数字空间为主，连接七个功能区，支持课堂、实验、临床、项目与自主学习之间的连续切换。</p>
+          </div>
+        </div>
+        <div class="space-zone-grid">
+          <span>知识学习区</span><span>虚拟实验区</span><span>病例推演区</span><span>技能训练区</span><span>项目协作区</span><span>成果展示区</span><span>成长档案区</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="two-column-feature">
+          <article class="feature-panel reveal">
+            <div class="page-kicker">MEDICAL AI CAREER OFFICER</div>
+            <h2>医学类 AI 就业官</h2>
+            <p>从岗位匹配开始，识别能力短板，生成回补学习路径；完成学习后推荐实践去向，并将就业与发展反馈回流到培养方案。</p>
+            <div class="path-strip" style="margin-top:20px">
+              <div class="path-step"><em>01</em><b>岗位匹配</b><p>对照岗位能力图谱。</p></div>
+              <div class="path-step"><em>02</em><b>短板回补</b><p>推荐课程与训练。</p></div>
+              <div class="path-step"><em>03</em><b>去向推荐</b><p>匹配医院与机构。</p></div>
+              <div class="path-step"><em>04</em><b>结果回流</b><p>更新学习画像。</p></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="project-square">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">PROJECT-BASED MEDICAL LEARNING</div>
+            <h2>项目广场</h2>
+            <p>项目式教学由任务引擎驱动，设置四阶关卡与十大标准化模块，让课程知识在真实医学项目中完成迁移和评价。</p>
+          </div>
+          <a class="text-link" href="project.html">进入项目广场 <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="path-strip reveal">
+          <div class="path-step"><em>关卡 01</em><b>问题定义</b><p>承接任务、识别目标与约束。</p></div>
+          <div class="path-step"><em>关卡 02</em><b>证据构建</b><p>检索知识、病例与指南证据。</p></div>
+          <div class="path-step"><em>关卡 03</em><b>方案执行</b><p>协作完成项目任务与阶段交付。</p></div>
+          <div class="path-step"><em>关卡 04</em><b>评价反思</b><p>依据能力标准完成答辩和改进。</p></div>
+          <div class="path-step"><em>标准模块</em><b>十大模块</b><p>覆盖任务、资源、协作、评价与成果。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

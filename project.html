@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大理大学医学智慧教育平台项目式学习，围绕真实医疗与公共卫生问题开展协作学习。">
+  <title>项目式学习｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="project">
+  <div data-site-header></div>
+
+  <main>
+    <section class="page-hero" style="--page-image:url('../assets/covers/project.svg')">
+      <div class="container page-hero__inner">
+        <div>
+          <div class="page-kicker">PROJECT-BASED MEDICAL LEARNING</div>
+          <h1>项目式学习</h1>
+          <p>把边境公共卫生、慢病管理、临床质量改进和健康教育问题转化为可协作、可评价的真实项目，在解决问题中形成医学胜任力。</p>
+          <div class="hero-actions">
+            <a class="button white" href="#projects">浏览项目 <i data-lucide="arrow-down"></i></a>
+            <button class="button ghost" type="button" data-toast="项目发起功能为演示入口">发起新项目</button>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h3>项目式学习概览</h3>
+          <p>从真实问题出发，用证据、协作与反思完成闭环。</p>
+          <div class="hero-panel-grid">
+            <div><b>12</b><span>进行中项目</span></div>
+            <div><b>36</b><span>跨专业小组</span></div>
+            <div><b>8</b><span>校地协作机构</span></div>
+            <div><b>5</b><span>阶段评价节点</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">REAL-WORLD PROJECTS</div>
+            <h2>真实医学项目</h2>
+            <p>可按项目类型筛选。提交操作只更新本地演示状态，不会产生真实业务数据。</p>
+          </div>
+        </div>
+        <div class="toolbar reveal" data-filter-group data-filter-target="#projectGrid">
+          <label class="toolbar-search">
+            <i data-lucide="search"></i>
+            <input type="search" placeholder="搜索项目主题、疾病领域或实践场景" data-filter-search>
+          </label>
+          <button class="filter-button active" type="button" data-filter="all">全部</button>
+          <button class="filter-button" type="button" data-filter="clinical">临床改进</button>
+          <button class="filter-button" type="button" data-filter="public">公共卫生</button>
+          <button class="filter-button" type="button" data-filter="health">健康教育</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card reveal" data-category="clinical">
+            <div class="project-cover" style="--page-image:url('../assets/covers/clinical.svg')"><span class="project-status">招募成员</span></div>
+            <div class="project-body">
+              <h3>基层高血压患者连续管理改进项目</h3>
+              <p>分析社区高血压随访中的薄弱环节，设计更易执行的健康管理方案。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>临床改进</b></div><div><small>团队规模</small><b>8—12 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="public">
+            <div class="project-cover" style="--page-image:url('../assets/covers/research.svg')"><span class="project-status">进行中</span></div>
+            <div class="project-body">
+              <h3>边境地区传染病监测情景推演</h3>
+              <p>围绕症状监测、风险沟通和多部门协作设计综合实践任务。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>公共卫生</b></div><div><small>团队规模</small><b>10—16 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="health">
+            <div class="project-cover" style="--page-image:url('../assets/covers/knowledge.svg')"><span class="project-status">即将开始</span></div>
+            <div class="project-body">
+              <h3>高原地区慢病健康教育资源共创</h3>
+              <p>制作适合基层传播的图文、短视频和面对面讲解方案。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>健康教育</b></div><div><small>团队规模</small><b>6—10 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="clinical">
+            <div class="project-cover" style="--page-image:url('../assets/covers/personal.svg')"><span class="project-status">招募成员</span></div>
+            <div class="project-body">
+              <h3>医患沟通困难情境模拟训练</h3>
+              <p>围绕高风险告知、共同决策和情绪安抚构建训练案例。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>临床沟通</b></div><div><small>团队规模</small><b>10—14 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="public">
+            <div class="project-cover" style="--page-image:url('../assets/covers/course-med.svg')"><span class="project-status">进行中</span></div>
+            <div class="project-body">
+              <h3>社区老年人跌倒风险筛查与干预</h3>
+              <p>把护理评估、居家风险改造与健康教育连接成持续干预方案。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>社区健康</b></div><div><small>团队规模</small><b>8—12 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="health">
+            <div class="project-cover" style="--page-image:url('../assets/covers/course-spe.svg')"><span class="project-status">即将开始</span></div>
+            <div class="project-body">
+              <h3>儿童常见病家庭护理科普作品</h3>
+              <p>面向家长设计发热、腹泻和意外伤害的家庭护理指导包。</p>
+              <div class="project-facts"><div><small>项目类型</small><b>健康教育</b></div><div><small>团队规模</small><b>6—8 人</b></div></div>
+              <div class="project-actions"><button class="button soft" type="button" data-toast="已打开项目详情演示">查看详情</button><button class="button primary" type="button" data-submit-project>提交方案</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">PROJECT WORKFLOW</div>
+            <h2>项目学习闭环</h2>
+          </div>
+        </div>
+        <div class="path-strip reveal">
+          <div class="path-step"><em>01</em><b>问题定义</b><p>识别真实场景中的关键问题。</p></div>
+          <div class="path-step"><em>02</em><b>证据检索</b><p>查阅指南、数据与相关研究。</p></div>
+          <div class="path-step"><em>03</em><b>方案共创</b><p>跨专业协作形成可执行方案。</p></div>
+          <div class="path-step"><em>04</em><b>实践验证</b><p>在模拟或真实场景中测试。</p></div>
+          <div class="path-step"><em>05</em><b>展示反思</b><p>公开成果并完成改进复盘。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

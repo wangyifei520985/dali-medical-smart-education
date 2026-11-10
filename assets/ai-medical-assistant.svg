@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="460" viewBox="0 0 360 460">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset=".5" stop-color="#7edcea"/>
+      <stop offset="1" stop-color="#1685db"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d8f2ff"/>
+    </linearGradient>
+    <linearGradient id="visor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#092f79"/>
+      <stop offset="1" stop-color="#06a7c1"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#04295c" flood-opacity=".22"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 -9;0 0" dur="3.6s" repeatCount="indefinite"/>
+    <ellipse cx="180" cy="426" rx="86" ry="20" fill="#0a4c8f" opacity=".16"/>
+
+    <g filter="url(#shadow)">
+      <path d="M100 216 C70 239 63 287 70 346 C75 390 95 414 132 418 L228 418 C265 414 285 390 290 346 C297 287 290 239 260 216Z" fill="url(#coat)"/>
+      <path d="M128 222 L180 272 L232 222 L248 247 L212 290 L212 411 L148 411 L148 290 L112 247Z" fill="#effbff"/>
+      <path d="M146 302H214V344H146Z" fill="#d8f2ff" opacity=".72"/>
+      <path d="M169 307H191V319H203V341H191V353H169V341H157V319H169Z" fill="url(#body)" filter="url(#glow)"/>
+    </g>
+
+    <g>
+      <rect x="89" y="88" width="182" height="145" rx="63" fill="url(#body)" stroke="#cdf8ff" stroke-width="4"/>
+      <rect x="112" y="108" width="136" height="86" rx="39" fill="url(#visor)"/>
+      <circle cx="151" cy="148" r="10" fill="#bdf8ff">
+        <animate attributeName="r" values="9;12;9" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="208" cy="148" r="10" fill="#bdf8ff">
+        <animate attributeName="r" values="12;9;12" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M151 174 C166 187 192 187 208 174" fill="none" stroke="#8bf2e9" stroke-width="5" stroke-linecap="round"/>
+      <path d="M180 88V54" stroke="#8fe4ef" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="180" cy="46" r="16" fill="#29c8cf"/>
+      <circle cx="180" cy="46" r="7" fill="#f6ffff"/>
+    </g>
+
+    <g>
+      <path d="M97 128 C80 128 61 143 61 164 C61 189 83 203 102 203" fill="#e8fbff" stroke="#c9f5ff" stroke-width="3"/>
+      <path d="M263 128 C280 128 299 143 299 164 C299 189 277 203 258 203" fill="#e8fbff" stroke="#c9f5ff" stroke-width="3"/>
+    </g>
+
+    <g transform="translate(92 268)">
+      <path d="M0 12 C26 -18 62 -16 82 12" fill="none" stroke="#1189d1" stroke-width="7" stroke-linecap="round"/>
+      <path d="M83 12 C85 42 72 61 53 72" fill="none" stroke="#1189d1" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="51" cy="74" r="10" fill="none" stroke="#1189d1" stroke-width="6"/>
+      <path d="M43 82 C35 92 35 103 41 113" fill="none" stroke="#12a9b4" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <g fill="none" stroke="#20c8d4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M235 258 C248 248 261 260 265 272 C269 260 282 248 295 258 C307 267 303 285 288 300 L265 313 L242 300 C227 285 223 267 235 258Z" fill="#ffeff3" stroke="#ff7089"/>
+      <path d="M256 270H274M265 261V279" stroke="#ff7089" stroke-width="5"/>
+    </g>
+
+    <g fill="#69e1e6" opacity=".8" filter="url(#glow)">
+      <circle cx="72" cy="220" r="5">
+        <animate attributeName="cy" values="220;198;220" dur="3.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="238" r="7">
+        <animate attributeName="cy" values="238;213;238" dur="4.1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="288" cy="390" r="5">
+        <animate attributeName="cy" values="390;368;390" dur="3.7s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+</svg>

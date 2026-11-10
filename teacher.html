@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大理大学医学智慧教育平台未来教师中心，支持医学课程设计、资源生成、课堂互动与学情评价。">
+  <title>未来教师中心｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="teacher">
+  <div data-site-header></div>
+
+  <main>
+    <section class="page-hero" style="--page-image:url('../assets/covers/teacher.svg')">
+      <div class="container page-hero__inner">
+        <div>
+          <div class="page-kicker">FUTURE MEDICAL FACULTY CENTER</div>
+          <h1>未来教师中心</h1>
+          <p>围绕医学教师课程设计、资源建设、课堂互动和评价反馈，形成“备课、授课、观察、改进”的连续教学支持空间。</p>
+          <div class="hero-actions">
+            <a class="button white" href="#lesson-studio">开始智慧备课 <i data-lucide="arrow-down"></i></a>
+            <button class="button ghost" type="button" data-toast="已打开教学能力发展演示">查看教师发展档案</button>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h3>教师工作台</h3>
+          <p>把重复性工作交给工具，把时间留给教学与反馈。</p>
+          <div class="hero-panel-grid">
+            <div><b>6</b><span>课程设计模板</span></div>
+            <div><b>108</b><span>可复用教学资源</span></div>
+            <div><b>4</b><span>课堂教学工具</span></div>
+            <div><b>12</b><span>学情观察指标</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="lesson-studio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">AI LESSON STUDIO</div>
+            <h2>医学课程智慧备课</h2>
+            <p>输入课程主题、授课对象和教学目标，演示工具会生成课堂结构建议、学习任务与评价方案。</p>
+          </div>
+        </div>
+        <div class="lesson-layout">
+          <div class="console-card reveal">
+            <div class="page-kicker">LESSON BRIEF</div>
+            <div class="lesson-form">
+              <label>课程主题
+                <input type="text" value="急性胸痛的识别与处置">
+              </label>
+              <label>授课对象
+                <select>
+                  <option>临床医学专业本科生</option>
+                  <option>护理学专业本科生</option>
+                  <option>住院医师规范化培训学员</option>
+                  <option>基层医疗机构医务人员</option>
+                </select>
+              </label>
+              <label>教学目标
+                <textarea>能够完成急性胸痛的初步风险评估，提出合理的鉴别诊断路径，并说明转诊与沟通要点。</textarea>
+              </label>
+              <button class="button primary" type="button" data-toast="课程设计方案已生成">生成课程设计方案 <i data-lucide="sparkles"></i></button>
+            </div>
+          </div>
+          <aside class="side-panel reveal">
+            <div class="page-kicker">GENERATED OUTLINE</div>
+            <h3 style="margin:0;font-size:20px">课堂结构建议</h3>
+            <div class="side-stack" style="margin-top:16px">
+              <div class="side-item"><b>10 分钟 · 情境导入</b><span>用急诊胸痛病例引出风险分层问题。</span></div>
+              <div class="side-item"><b>25 分钟 · 知识拆解</b><span>心电图、肌钙蛋白和危险因素之间的关系。</span></div>
+              <div class="side-item"><b>30 分钟 · 小组推演</b><span>学生分组完成鉴别诊断与处置顺序。</span></div>
+              <div class="side-item"><b>15 分钟 · 评价反馈</b><span>依据推理路径和质量标准进行同伴互评。</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">TEACHING TOOLKIT</div>
+            <h2>教学工具箱</h2>
+            <p>课前、课中、课后使用同一套医学教育语言，降低教师切换工具的成本。</p>
+          </div>
+        </div>
+        <div class="cards-grid four">
+          <article class="info-card reveal"><span class="info-card__icon"><i data-lucide="file-pen-line"></i></span><h3>教案与课件生成</h3><p>按课程目标和学时快速生成教学结构、案例与课堂活动。</p><div class="info-card__foot"><span>备课提效</span><i data-lucide="arrow-up-right"></i></div></article>
+          <article class="info-card reveal"><span class="info-card__icon"><i data-lucide="users-round"></i></span><h3>课堂互动</h3><p>支持投票、病例讨论、小组任务和即时反馈。</p><div class="info-card__foot"><span>课堂参与</span><i data-lucide="arrow-up-right"></i></div></article>
+          <article class="info-card reveal"><span class="info-card__icon"><i data-lucide="chart-no-axes-combined"></i></span><h3>学情分析</h3><p>汇聚作业、测评和课堂表现，快速发现学习难点。</p><div class="info-card__foot"><span>过程评价</span><i data-lucide="arrow-up-right"></i></div></article>
+          <article class="info-card reveal"><span class="info-card__icon"><i data-lucide="badge-check"></i></span><h3>教学评价</h3><p>用能力标准和证据链支持课程目标达成度分析。</p><div class="info-card__foot"><span>质量改进</span><i data-lucide="arrow-up-right"></i></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">CLINICAL FACULTY DEVELOPMENT</div>
+            <h2>教师发展路径</h2>
+          </div>
+        </div>
+        <div class="path-strip reveal">
+          <div class="path-step"><em>01</em><b>教学认知</b><p>建立医学教育目标与能力框架。</p></div>
+          <div class="path-step"><em>02</em><b>课程设计</b><p>把临床问题转化为学习任务。</p></div>
+          <div class="path-step"><em>03</em><b>教学实施</b><p>开展互动、演示与病例讨论。</p></div>
+          <div class="path-step"><em>04</em><b>评价反馈</b><p>依据证据给出针对性反馈。</p></div>
+          <div class="path-step"><em>05</em><b>课程改进</b><p>根据达成度数据持续迭代。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大理大学医学智慧教育平台科研探索，提供医学文献、研究方向、科研项目、导师团队和科研工具入口。">
+  <title>科研探索｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="research">
+  <div data-site-header></div>
+
+  <main>
+    <section class="section" style="padding-top:52px">
+      <div class="container">
+        <div class="research-shell reveal" style="--research-cover:url('../assets/covers/research.svg')">
+          <div class="page-kicker" style="color:#84dfe7">MEDICAL RESEARCH DISCOVERY</div>
+          <h2>科研探索</h2>
+          <p>从医学前沿到科研发现，连接文献、研究方向、项目、导师团队和研究工具，支持从问题形成到证据整理的完整过程。</p>
+          <div class="research-search" data-console>
+            <label class="sr-only" for="researchQuery">输入研究问题</label>
+            <textarea id="researchQuery" placeholder="输入研究问题、关键词、DOI 或指南名称"></textarea>
+            <div class="research-search__bar">
+              <div class="research-modes">
+                <button class="active" type="button" data-research-mode="explore">探索</button>
+                <button type="button" data-research-mode="task">任务</button>
+                <button type="button" data-research-mode="deep">Deep Research</button>
+                <button type="button" data-research-mode="more">更多</button>
+              </div>
+              <button class="button white" type="button" data-research-send>
+                开始检索 <i data-lucide="send-horizontal"></i>
+              </button>
+            </div>
+            <div class="prompt-actions" style="margin-top:14px">
+              <div class="prompt-tags">
+                <button type="button" data-prompt="高原地区慢性病管理的循证研究进展">高原慢病管理</button>
+                <button type="button" data-prompt="人工智能辅助医学影像诊断的证据评价">AI 影像诊断</button>
+                <button type="button" data-prompt="沿边地区基层公共卫生服务能力研究">沿边公共卫生</button>
+              </div>
+            </div>
+            <div class="console-output" data-console-output hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">RESEARCH RESOURCES</div>
+            <h2>科研资源</h2>
+            <p>围绕医学研究的不同阶段提供资源入口。</p>
+          </div>
+        </div>
+        <div class="research-results">
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="library-big"></i></span><h3>文献</h3><p>检索医学文献、指南、共识与研究证据。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="compass"></i></span><h3>研究方向</h3><p>了解高原医学、慢病管理、公共卫生与智能医学等前沿方向。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="folder-kanban"></i></span><h3>科研项目</h3><p>发现开放课题、团队任务和跨学科合作机会。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="users-round"></i></span><h3>导师 / 团队</h3><p>根据研究领域查找导师和科研团队。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="wrench"></i></span><h3>科研工具</h3><p>文献管理、证据整理、数据分析和论文写作支持。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="badge-check"></i></span><h3>医学伦理</h3><p>研究备案、知情同意、隐私保护和伦理审查提示。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="chart-no-axes-combined"></i></span><h3>数据分析</h3><p>医学统计、真实世界数据分析与可视化支持。</p></article>
+          <article class="reveal"><span class="info-card__icon"><i data-lucide="pen-line"></i></span><h3>成果表达</h3><p>论文结构、图表规范和研究汇报辅助。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">RESEARCH PATH</div>
+            <h2>科研探索路径</h2>
+          </div>
+        </div>
+        <div class="path-strip reveal">
+          <div class="path-step"><em>01</em><b>提出问题</b><p>从临床痛点和区域健康问题中形成研究问题。</p></div>
+          <div class="path-step"><em>02</em><b>证据检索</b><p>整合文献、指南、数据与专家意见。</p></div>
+          <div class="path-step"><em>03</em><b>方案设计</b><p>明确研究对象、方法、指标和伦理要求。</p></div>
+          <div class="path-step"><em>04</em><b>分析解释</b><p>完成数据分析和结果解释。</p></div>
+          <div class="path-step"><em>05</em><b>成果转化</b><p>形成论文、项目方案或教学资源。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

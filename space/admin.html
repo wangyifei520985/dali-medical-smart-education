@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>管理端｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="space-admin">
+  <div class="space-shell">
+    <aside class="space-sidebar">
+      <h2>管理端</h2>
+      <p>平台运行 · 数据治理 · 质量监控</p>
+      <nav>
+        <a class="active" href="space/admin.html"><i data-lucide="gauge"></i>运行总览</a>
+        <a href="space/admin.html#data"><i data-lucide="database"></i>数据画像</a>
+        <a href="space/admin.html#quality"><i data-lucide="badge-check"></i>教学质量</a>
+        <a href="space/admin.html#resources"><i data-lucide="folder-cog"></i>资源治理</a>
+        <a href="index.html"><i data-lucide="house"></i>返回中心</a>
+      </nav>
+    </aside>
+    <section class="space-content" style="--space-cover:url('../assets/covers/research.svg')">
+      <header class="space-topbar">
+        <div><h1>运行总览</h1><p>统一身份、数据资源、课程运行与学习服务状态。</p></div>
+        <button class="button primary" type="button" data-toast="运行报告已生成">导出运行报告</button>
+      </header>
+      <div class="dashboard-grid" id="data">
+        <article class="dashboard-card"><span>活跃用户</span><strong>2,846</strong><p>学生、教师与协作人员</p></article>
+        <article class="dashboard-card"><span>课程访问</span><strong>18.6k</strong><p>近 7 天累计访问</p></article>
+        <article class="dashboard-card"><span>资源调用</span><strong>42.1k</strong><p>知识库与数字教材调用</p></article>
+        <article class="dashboard-card"><span>服务可用率</span><strong>99.9%</strong><p>统一门户运行稳定</p></article>
+        <article class="dashboard-card wide" id="quality">
+          <span>课程运行质量</span>
+          <div class="progress-list">
+            <div class="progress-row"><span>课程资源完整度</span><div class="progress-track"><i style="width:91%"></i></div><b>91%</b></div>
+            <div class="progress-row"><span>学习活动参与度</span><div class="progress-track"><i style="width:78%"></i></div><b>78%</b></div>
+            <div class="progress-row"><span>课程目标达成度</span><div class="progress-track"><i style="width:84%"></i></div><b>84%</b></div>
+          </div>
+        </article>
+        <article class="dashboard-card wide" id="resources">
+          <span>平台动态</span>
+          <div class="activity-list">
+            <div class="activity-row"><b>知识库更新</b><span>新增临床指南与课程图谱节点</span><em>今天 09:30</em></div>
+            <div class="activity-row"><b>统一身份同步</b><span>附属医院与协作单位账号完成同步</span><em>11 月 8 日</em></div>
+            <div class="activity-row"><b>课程数据校验</b><span>六个课程群资源完整度检查完成</span><em>11 月 6 日</em></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

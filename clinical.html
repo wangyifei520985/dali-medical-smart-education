@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大理大学医学智慧教育平台医师智脑执业中心，融合医学专业大模型、医学智能体群、知识库、岗位能力图谱与执业考试测评。">
+  <title>医师智脑执业中心｜大理大学医学智慧教育平台</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="clinical">
+  <div data-site-header></div>
+
+  <main>
+    <section class="page-hero" style="--page-image:url('../assets/covers/clinical.svg')">
+      <div class="container page-hero__inner">
+        <div>
+          <div class="page-kicker">MEDICAL MODEL · CAPABILITY · PRACTICE</div>
+          <h1>医师智脑执业中心</h1>
+          <p>将医学专业大模型与产教融合能力体系合并为统一入口，围绕基础知识、临床思维、护理能力和预防医学场景，连接智能体群、十类知识库、岗位能力图谱与执业考试测评。</p>
+          <div class="hero-actions">
+            <a class="button white" href="#model-console">进入医学大模型 <i data-lucide="arrow-down"></i></a>
+            <a class="button ghost" href="#exam">开始执业能力测评</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <h3>统合能力框架</h3>
+          <p>从“会回答”延伸到“能分析、能实践、能评价、能发展”。</p>
+          <div class="hero-panel-grid">
+            <div><b>4</b><span>专业知识会话方向</span></div>
+            <div><b>8</b><span>医学智能体角色</span></div>
+            <div><b>10</b><span>专业知识库</span></div>
+            <div><b>5</b><span>岗位能力层级</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="model-console">
+      <div class="container">
+        <div class="model-entry-shell reveal">
+          <div class="model-entry-head">
+            <div>
+              <div class="page-kicker" style="color:#80dde4">MEDICAL TERRITORY MODEL</div>
+              <h2>医学专业大模型会话入口</h2>
+              <p>支持知识问答、病例分析、学习解释、文献梳理与岗位能力分析。演示页面使用本地预设回答，不连接真实模型服务。</p>
+            </div>
+            <div class="model-head-side">
+              <span class="model-status">医学知识服务在线</span>
+              <div class="model-mascot-wrap">
+                <span>我会帮你把知识、病例与岗位能力串起来</span>
+                <img class="model-mascot" src="assets/ai-medical-assistant.svg" alt="AI医学助手卡通形象">
+              </div>
+            </div>
+          </div>
+
+          <div class="model-console" data-console>
+            <div class="model-mode-tabs" aria-label="选择医学专业方向">
+              <button class="active" type="button">基础医学</button>
+              <button type="button">临床医学</button>
+              <button type="button">护理学</button>
+              <button type="button">预防医学</button>
+            </div>
+            <div class="model-compose">
+              <label class="sr-only" for="medicalQuery">输入医学问题</label>
+              <textarea id="medicalQuery" placeholder="输入医学问题，如：如何理解高原地区高血压患者的用药与随访差异？"></textarea>
+              <div class="model-compose__foot">
+                <div class="model-compose__tools">
+                  <button type="button" data-toast="支持上传病例、检验报告、课件和文献">上传资料</button>
+                  <button type="button" data-toast="已开启知识点引用演示">引用知识库</button>
+                  <button type="button" data-toast="可选择严谨解释、病例推演或教学表达">回答风格</button>
+                </div>
+                <button class="button primary" type="button" data-console-send>生成分析 <i data-lucide="send-horizontal"></i></button>
+              </div>
+            </div>
+            <div class="prompt-actions" style="margin-top:14px">
+              <div class="prompt-tags">
+                <button type="button" data-prompt="从病理生理机制解释慢性心力衰竭患者夜间阵发性呼吸困难">病理机制解释</button>
+                <button type="button" data-prompt="设计一个发热伴皮疹病例的临床推理训练任务">病例推理训练</button>
+                <button type="button" data-prompt="护理学本科学生进入临床前应掌握哪些核心操作能力">护理能力清单</button>
+                <button type="button" data-prompt="分析边境地区传染病监测的重点岗位能力">岗位能力分析</button>
+              </div>
+            </div>
+            <div class="console-output" data-console-output hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">MEDICAL AGENT MATRIX</div>
+            <h2>医学智能体群</h2>
+            <p>围绕不同教学、临床与岗位任务配置智能体角色，智能体共享知识证据但使用不同的任务目标和回答结构。</p>
+          </div>
+        </div>
+        <div class="agent-grid">
+          <article class="agent-card reveal"><i data-lucide="microscope"></i><h3>基础医学助教</h3><p>解释解剖、生理、病理与药理机制，生成图谱化知识讲解。</p></article>
+          <article class="agent-card reveal"><i data-lucide="stethoscope"></i><h3>临床推理教练</h3><p>从主诉、病史、检查到诊断和处置逐步引导临床思维。</p></article>
+          <article class="agent-card reveal"><i data-lucide="heart-pulse"></i><h3>护理实训导师</h3><p>演示操作流程，分析风险点，生成护理计划与沟通训练。</p></article>
+          <article class="agent-card reveal"><i data-lucide="shield-plus"></i><h3>预防医学顾问</h3><p>聚焦流行病学、健康教育、慢病管理和区域公共卫生问题。</p></article>
+          <article class="agent-card reveal"><i data-lucide="clipboard-check"></i><h3>执业考试教练</h3><p>按知识点、病例题和技能站点生成练习与错因复盘。</p></article>
+          <article class="agent-card reveal"><i data-lucide="briefcase-medical"></i><h3>岗位能力规划师</h3><p>连接岗位画像、课程知识与个人能力差距，形成成长建议。</p></article>
+          <article class="agent-card reveal"><i data-lucide="book-marked"></i><h3>循证文献助手</h3><p>检索指南、共识与研究证据，辅助完成证据分级和综述。</p></article>
+          <article class="agent-card reveal"><i data-lucide="messages-square"></i><h3>医患沟通教练</h3><p>模拟不同患者情境，训练解释、共情、共同决策与告知表达。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">TEN KNOWLEDGE BASES</div>
+            <h2>10 个医学专业知识库</h2>
+            <p>按专业知识和岗位任务组织资源，支持知识点溯源、课程关联与能力评价。</p>
+          </div>
+        </div>
+        <div class="knowledge-base-grid">
+          <article class="knowledge-base reveal"><small>KB 01</small><h3>基础医学知识库</h3><p>解剖、生理、生化、病理、药理与免疫。</p><b>28,600 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 02</small><h3>临床诊疗知识库</h3><p>常见病、多发病与疑难病例诊疗路径。</p><b>21,800 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 03</small><h3>护理与康养知识库</h3><p>护理操作、风险评估与连续性照护。</p><b>12,400 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 04</small><h3>公共卫生知识库</h3><p>流行病学、传染病监测与健康教育。</p><b>9,700 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 05</small><h3>医学指南与共识库</h3><p>国家和行业指南、专家共识与规范。</p><b>3,200 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 06</small><h3>药品与用药安全库</h3><p>适应证、禁忌证、相互作用与用药监护。</p><b>18,900 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 07</small><h3>检验检查知识库</h3><p>检验指标、影像表现与结果解释。</p><b>16,500 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 08</small><h3>医学人文与沟通库</h3><p>伦理、法律、沟通与共同决策情境。</p><b>2,300 条</b></article>
+          <article class="knowledge-base reveal"><small>KB 09</small><h3>执业考试与题库</h3><p>执业医师、护理与预防岗位考试资源。</p><b>46,000 道</b></article>
+          <article class="knowledge-base reveal"><small>KB 10</small><h3>沿边医疗特色库</h3><p>高原病、地方病、跨境健康与基层适宜技术。</p><b>5,600 条</b></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">JOB ABILITY MAP</div>
+            <h2>岗位能力图谱</h2>
+            <p>把专业、岗位与能力要求映射到课程和实践任务，支持个人能力测评与培养方案调整。</p>
+          </div>
+          <button class="button soft" type="button" data-toast="已切换至临床医师岗位画像">切换岗位画像</button>
+        </div>
+        <div class="capability-board">
+          <div class="capability-map reveal">
+            <div class="section-kicker" style="color:#83dce3">CORE CAPABILITY TREE</div>
+            <h3 style="margin:0;font-size:22px">临床医师岗位能力图谱</h3>
+            <p style="margin:8px 0 0;color:#b4d1e1;font-size:11px;line-height:1.7">从知识基础、临床技能、职业素养到持续学习形成五级能力路径。</p>
+            <div class="capability-tree">
+              <div class="capability-node"><b>核心能力：胜任临床全流程</b><span>能够独立完成常见病诊疗，并具备安全转诊与持续学习能力。</span></div>
+              <div class="capability-node"><b>医学知识</b><span>基础理论 · 疾病机制 · 指南证据</span></div>
+              <div class="capability-node"><b>临床技能</b><span>病史采集 · 体格检查 · 基本操作</span></div>
+              <div class="capability-node"><b>临床思维</b><span>鉴别诊断 · 风险评估 · 决策复盘</span></div>
+              <div class="capability-node"><b>沟通协作</b><span>医患沟通 · 团队协作 · 伦理决策</span></div>
+              <div class="capability-node"><b>职业发展</b><span>循证学习 · 科研意识 · 继续教育</span></div>
+            </div>
+          </div>
+          <div class="capacity-list">
+            <div class="capacity-item reveal"><header><b>医学知识掌握度</b><em>86%</em></header><div class="progress-track"><i style="width:86%"></i></div></div>
+            <div class="capacity-item reveal"><header><b>病例推理能力</b><em>78%</em></header><div class="progress-track"><i style="width:78%"></i></div></div>
+            <div class="capacity-item reveal"><header><b>临床操作技能</b><em>72%</em></header><div class="progress-track"><i style="width:72%"></i></div></div>
+            <div class="capacity-item reveal"><header><b>沟通与人文关怀</b><em>81%</em></header><div class="progress-track"><i style="width:81%"></i></div></div>
+            <div class="capacity-item reveal"><header><b>公共卫生与预防能力</b><em>64%</em></header><div class="progress-track"><i style="width:64%"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="exam">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">LICENSURE ASSESSMENT</div>
+            <h2>执业考试测评</h2>
+            <p>按考试类型选择测评入口，结合知识点掌握度、病例题表现和技能操作记录生成复盘报告。</p>
+          </div>
+        </div>
+        <div class="exam-grid">
+          <article class="exam-card reveal">
+            <header><i data-lucide="stethoscope"></i><span>临床执业医师</span></header>
+            <h3>临床综合能力测评</h3>
+            <p>覆盖基础医学综合、临床医学综合与实践综合，提供病例题拆解和错因分析。</p>
+            <button class="button primary" type="button" data-toast="已进入临床执业医师模拟测评">开始测评</button>
+          </article>
+          <article class="exam-card reveal">
+            <header><i data-lucide="heart-handshake"></i><span>护士执业资格</span></header>
+            <h3>护理专业实务与实践</h3>
+            <p>聚焦护理评估、操作规范、风险管理和患者沟通，提供技能站点自评。</p>
+            <button class="button primary" type="button" data-toast="已进入护士执业资格模拟测评">开始测评</button>
+          </article>
+          <article class="exam-card reveal">
+            <header><i data-lucide="shield-check"></i><span>公共卫生执业</span></header>
+            <h3>预防医学与公共卫生</h3>
+            <p>覆盖流行病学、疾病控制、健康教育与基层公共卫生服务能力。</p>
+            <button class="button primary" type="button" data-toast="已进入公共卫生模拟测评">开始测评</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-kicker">INDUSTRY-EDUCATION COLLABORATION</div>
+            <h2>岗位需求到培养方案</h2>
+            <p>将医院、基层卫生机构和行业岗位需求转换为课程主题、实践任务与能力评价标准。</p>
+          </div>
+        </div>
+        <div class="path-strip reveal">
+          <div class="path-step"><em>01</em><b>岗位需求采集</b><p>汇聚医院、社区卫生机构和行业岗位画像。</p></div>
+          <div class="path-step"><em>02</em><b>能力标准解析</b><p>识别知识、技能、素养与岗位任务要求。</p></div>
+          <div class="path-step"><em>03</em><b>课程内容映射</b><p>将能力要求对应到课程、实验与临床实践。</p></div>
+          <div class="path-step"><em>04</em><b>真实项目验证</b><p>以病例、公共卫生任务和临床改进项目检验能力。</p></div>
+          <div class="path-step"><em>05</em><b>岗位胜任评价</b><p>通过过程数据与考试测评形成持续能力档案。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
