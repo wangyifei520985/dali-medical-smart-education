@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="未来学习中心蓝皮书公司沙龙共创网页，围绕个性化、项目化、自主学习与三大支撑能力展开讨论。"
+    />
+    <title>未来学习中心蓝皮书 · 公司沙龙共创</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-reading="standard">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <aside class="sidebar" aria-label="页面导航">
+      <div class="sidebar__brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span>FLC</span>
+        </div>
+        <div>
+          <strong>未来学习中心</strong>
+          <span>蓝皮书共创沙龙</span>
+        </div>
+      </div>
+
+      <nav class="sidebar__nav">
+        <a href="#overview" class="nav-link active">
+          <i data-lucide="sparkles"></i><span>开场</span>
+        </a>
+        <a href="#summary" class="nav-link">
+          <i data-lucide="scan-text"></i><span>执行摘要</span>
+        </a>
+        <a href="#framework" class="nav-link">
+          <i data-lucide="network"></i><span>整体结构</span>
+        </a>
+        <a href="#paradigms" class="nav-link">
+          <i data-lucide="route"></i><span>学习范式</span>
+        </a>
+        <a href="#capabilities" class="nav-link">
+          <i data-lucide="blocks"></i><span>支撑能力</span>
+        </a>
+        <a href="#construction" class="nav-link">
+          <i data-lucide="milestone"></i><span>建设路径</span>
+        </a>
+        <a href="#cases" class="nav-link">
+          <i data-lucide="library"></i><span>案例图谱</span>
+        </a>
+        <a href="#assessment" class="nav-link">
+          <i data-lucide="gauge"></i><span>成熟度自测</span>
+        </a>
+        <a href="#discussion" class="nav-link">
+          <i data-lucide="messages-square"></i><span>现场研讨</span>
+        </a>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="reading-progress">
+          <span>阅读进度</span>
+          <strong id="progressValue">0%</strong>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <span id="progressBar"></span>
+        </div>
+        <button class="button button--ghost button--full" id="presenterToggle" type="button">
+          <i data-lucide="presentation"></i>
+          <span>投屏模式</span>
+        </button>
+      </div>
+    </aside>
+
+    <header class="mobile-header">
+      <a href="#overview" class="mobile-brand">
+        <span class="brand-mark brand-mark--small">FLC</span>
+        <span>未来学习中心蓝皮书</span>
+      </a>
+      <button
+        class="mobile-menu-button"
+        id="mobileMenuButton"
+        type="button"
+        aria-label="打开导航"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <i data-lucide="menu"></i>
+      </button>
+      <nav class="mobile-nav" id="mobileMenu" aria-label="移动端导航">
+        <a href="#summary">执行摘要</a>
+        <a href="#framework">整体结构</a>
+        <a href="#paradigms">学习范式</a>
+        <a href="#capabilities">支撑能力</a>
+        <a href="#construction">建设路径</a>
+        <a href="#cases">案例图谱</a>
+        <a href="#discussion">现场研讨</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="overview">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="hero__brandline">超星泛雅 · 市场共创沙龙</p>
+            <h1>未来学习中心蓝皮书</h1>
+            <p class="hero__subtitle">从个性化、项目化到自主学习</p>
+            <p class="hero__lead">
+              未来学习中心不是再建一个资源平台，而是让每个学生拥有自己的学习路径、AI
+              伙伴和成长证据。
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#framework">
+                <i data-lucide="play"></i><span>进入总报告</span>
+              </a>
+              <a class="button button--secondary" href="#discussion">
+                <i data-lucide="messages-square"></i><span>打开研讨题</span>
+              </a>
+            </div>
+            <div class="hero__stats" aria-label="全书核心数字">
+              <div><strong data-count="4">0</strong><span>个未来</span></div>
+              <div><strong data-count="6">0</strong><span>个转变</span></div>
+              <div><strong data-count="3">0</strong><span>类范式</span></div>
+              <div><strong data-count="3">0</strong><span>大支撑能力</span></div>
+            </div>
+          </div>
+
+          <figure class="hero__visual">
+            <img src="assets/hero-event.webp" alt="超星未来学习中心发布现场" />
+            <figcaption>
+              <span>2024.4.11 · 厦门</span>
+              <strong>全国 1600 人会议，超星未来学习中心正式发布</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--paths" id="paths">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">阅读方式</p>
+              <h2>先选择你的角色，再决定今天讨论到哪里</h2>
+              <p>
+                同一本蓝皮书，对校领导、教务处、学院和信息中心的阅读价值不同。网页先把阅读路径分开，
+                现场就不会从产品功能开始争论。
+              </p>
+            </div>
+            <div class="segmented" id="readerPath" role="tablist" aria-label="选择阅读角色">
+              <button class="segmented__item active" type="button" role="tab" data-role="leadership">
+                校领导
+              </button>
+              <button class="segmented__item" type="button" role="tab" data-role="academic">
+                教务处
+              </button>
+              <button class="segmented__item" type="button" role="tab" data-role="college">
+                二级学院
+              </button>
+              <button class="segmented__item" type="button" role="tab" data-role="it">
+                信息中心
+              </button>
+            </div>
+          </div>
+
+          <div class="reader-path-panel" id="readerPathPanel">
+            <div>
+              <p class="reader-path-panel__label">建议阅读顺序</p>
+              <strong id="readerPathTitle">先看战略与成果</strong>
+            </div>
+            <ol class="reader-path-list" id="readerPathList">
+              <li>执行摘要：未来学习中心为什么现在</li>
+              <li>总报告：学习方式六个转变</li>
+              <li>建设路径：四步走与学校特色</li>
+              <li>案例图谱：哪些学校已经跑起来</li>
+            </ol>
+          </div>
+
+          <div class="reading-modes" aria-label="阅读深度">
+            <button class="reading-mode" type="button" data-reading="quick">
+              <strong>5 分钟</strong><span>看摘要与结论</span>
+            </button>
+            <button class="reading-mode active" type="button" data-reading="standard">
+              <strong>30 分钟</strong><span>看框架与场景</span>
+            </button>
+            <button class="reading-mode" type="button" data-reading="deep">
+              <strong>完整版</strong><span>看全部细节</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="summary">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">执行摘要</p>
+              <h2>未来学习中心，必须先把学习讲明白</h2>
+              <p>
+                全书不从产品功能开始，而从一个更根本的问题开始：未来的学生应该怎么学，学校应该如何组织学习。
+              </p>
+            </div>
+            <div class="summary-statement">
+              <span>一句话定义</span>
+              <strong>以学生成长为中心、以能力达成为目标、以 AI 为伙伴、以数据为改进依据的学习新基础设施。</strong>
+            </div>
+          </div>
+
+          <div class="judgment-grid">
+            <article><span>01</span><p>未来学习中心的中心不是技术，而是学习者。</p></article>
+            <article><span>02</span><p>学习目标不是知识堆积，而是能力达成。</p></article>
+            <article><span>03</span><p>统一培养方案将走向统一底线加个性路径。</p></article>
+            <article><span>04</span><p>个性化学习是入口，项目化学习是载体，自主学习是目标。</p></article>
+            <article><span>05</span><p>资源不再只是被观看，而要能被关联、调用和重组。</p></article>
+            <article><span>06</span><p>AI 不再只是问答工具，而要成为懂学校和懂专业的 AI 老师。</p></article>
+            <article><span>07</span><p>工具不再孤立存在，而要能够按真实场景灵活组装。</p></article>
+            <article><span>08</span><p>评价不再只看结果，而要看见过程、看见成长。</p></article>
+            <article><span>09</span><p>每所学校都应拥有适合自己的未来学习中心。</p></article>
+            <article><span>10</span><p>最终成果，是让学生获得持续成长的能力。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--framework" id="framework">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">全书总图</p>
+              <h2>从趋势到范式，从支撑能力到学校落地</h2>
+              <p>
+                第二版不再让三个关键词平铺成目录，而是把它们放回完整逻辑中：先解释学习方式变化，再说明靠什么支撑，
+                最后落到评价、建设和案例。
+              </p>
+            </div>
+          </div>
+
+          <div class="framework-flow">
+            <article>
+              <span>01</span>
+              <i data-lucide="radar"></i>
+              <strong>趋势</strong>
+              <p>四个未来、六个转变</p>
+            </article>
+            <div class="flow-link" aria-hidden="true"></div>
+            <article>
+              <span>02</span>
+              <i data-lucide="route"></i>
+              <strong>范式</strong>
+              <p>个性化、项目化、自主学习</p>
+            </article>
+            <div class="flow-link" aria-hidden="true"></div>
+            <article>
+              <span>03</span>
+              <i data-lucide="layers-3"></i>
+              <strong>支撑</strong>
+              <p>新资源、新伙伴、新工具</p>
+            </article>
+            <div class="flow-link" aria-hidden="true"></div>
+            <article>
+              <span>04</span>
+              <i data-lucide="gauge"></i>
+              <strong>成效</strong>
+              <p>过程可见、成长可证</p>
+            </article>
+            <div class="flow-link" aria-hidden="true"></div>
+            <article>
+              <span>05</span>
+              <i data-lucide="building-2"></i>
+              <strong>落地</strong>
+              <p>千校千面、持续运营</p>
+            </article>
+          </div>
+
+          <details class="report-accordion" open>
+            <summary>
+              <span>总报告 · 第一章</span>
+              <strong>四个未来：未来学习中心的时代坐标</strong>
+              <i data-lucide="chevron-down"></i>
+            </summary>
+            <div class="report-accordion__body">
+              <p>
+                未来课堂、未来学校、未来学习中心、未来教师共同构成未来教育图景。未来学习中心不是孤立项目，
+                而是承载师、生、机协同，连接课程、资源、实践与评价的学习新基础设施。
+              </p>
+              <ul>
+                <li>未来课堂：师、生、机三元协同。</li>
+                <li>未来学校：智能进入管理、服务与决策。</li>
+                <li>未来学习中心：能力驱动、泛在智能、多模态响应。</li>
+                <li>未来教师：AI 进入备课、教研与辅导。</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="report-accordion">
+            <summary>
+              <span>总报告 · 第二章</span>
+              <strong>学习方式的六个转变</strong>
+              <i data-lucide="chevron-down"></i>
+            </summary>
+            <div class="report-accordion__body">
+              <div class="shift-list">
+                <div><span>基于课程</span><i data-lucide="arrow-right"></i><strong>基于项目</strong></div>
+                <div><span>知识传授</span><i data-lucide="arrow-right"></i><strong>能力达成</strong></div>
+                <div><span>教师中心</span><i data-lucide="arrow-right"></i><strong>学生中心</strong></div>
+                <div><span>统一培养方案</span><i data-lucide="arrow-right"></i><strong>一生一案</strong></div>
+                <div><span>固定学习内容</span><i data-lucide="arrow-right"></i><strong>个性化路径</strong></div>
+                <div><span>师生二元互动</span><i data-lucide="arrow-right"></i><strong>师生机三元互动</strong></div>
+              </div>
+            </div>
+          </details>
+
+          <details class="report-accordion">
+            <summary>
+              <span>总报告 · 第三章</span>
+              <strong>定义、边界与六项判断标准</strong>
+              <i data-lucide="chevron-down"></i>
+            </summary>
+            <div class="report-accordion__body">
+              <p>
+                未来学习中心不是智慧教室，不是资源仓库，不是单一平台，也不是套壳问答机器人。
+                判断标准应当回到学习本身：学生中心、能力本位、个性路径、项目实践、自主学习、过程评价。
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="paradigms">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">专题篇 · 三类学习范式</p>
+              <h2>个性化是入口，项目化是载体，自主学习是目标</h2>
+              <p>
+                这三类范式不是三套产品，而是未来学习中心要运行起来的学习方式。每类范式都要同时回答：
+                学校为什么做、学生怎么用、教师和管理者怎么接住。
+              </p>
+            </div>
+          </div>
+
+          <article class="paradigm">
+            <div class="paradigm__copy">
+              <span class="index-label">01 · 个性化学习</span>
+              <h3>从统一进度到一生一案</h3>
+              <p>
+                个性化不是降低标准，而是在统一能力底线之上，为每个学生找到更适合的成长路径。
+              </p>
+              <ul>
+                <li>目标共创、能力诊断、画像构建。</li>
+                <li>路径设计、资源匹配、阶段反馈。</li>
+                <li>专业方向、职业倾向、目标行业共同进入方案。</li>
+              </ul>
+              <div class="discussion-inline">
+                <i data-lucide="message-circle-question"></i>
+                <span>讨论：学校现在有哪些数据足以支撑“一生一案”？</span>
+              </div>
+            </div>
+            <figure class="feature-visual">
+              <img src="assets/one-student-plan.webp" alt="一生一案个性化培养方案界面" />
+              <figcaption>从专业方向、个人目标到岗位画像，形成可调整、可审核的个性化培养方案</figcaption>
+            </figure>
+          </article>
+
+          <article class="paradigm paradigm--reverse">
+            <div class="paradigm__copy">
+              <span class="index-label">02 · 项目化学习</span>
+              <h3>从知识讲授到真实问题解决</h3>
+              <p>
+                项目化学习让知识在真实任务中发生，让能力在协作过程中形成。
+              </p>
+              <ul>
+                <li>AI 辅助任务拆解、组队分工和过程答疑。</li>
+                <li>项目门户、进度、小组、资料与成果统一管理。</li>
+                <li>从课堂项目扩展到校企、校地和跨校项目。</li>
+              </ul>
+              <div class="discussion-inline">
+                <i data-lucide="message-circle-question"></i>
+                <span>讨论：哪一类真实项目最适合先做出标杆？</span>
+              </div>
+            </div>
+            <figure class="feature-visual">
+              <img src="assets/project-engine.webp" alt="项目化学习引擎界面" />
+              <figcaption>项目任务、团队成员、学习进度、成果评价和 AI 助手被放进同一条工作流</figcaption>
+            </figure>
+          </article>
+
+          <article class="paradigm">
+            <div class="paradigm__copy">
+              <span class="index-label">03 · 自主学习</span>
+              <h3>从被动管理到自我驱动</h3>
+              <p>
+                自主学习的终点，不是学生独自学习，而是学生能够管理目标、调节策略并持续反思。
+              </p>
+              <ul>
+                <li>学、研、测、评一体化学习主线。</li>
+                <li>目标管理、过程监控、策略调整、反思复盘。</li>
+                <li>AI 提供支持，但不代替学生思考。</li>
+              </ul>
+              <div class="discussion-inline">
+                <i data-lucide="message-circle-question"></i>
+                <span>讨论：什么样的学习证据能证明学生真的更自主了？</span>
+              </div>
+            </div>
+            <figure class="feature-visual">
+              <img src="assets/case-xidian.webp" alt="西电自主研学分中心界面" />
+              <figcaption>把“学、研、测、评”串成一条成长主线，让每一环的输出成为下一环的输入</figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--support" id="capabilities">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">支撑篇 · 三大支撑能力</p>
+              <h2>从资源、伙伴到工具，把学习新范式真正支撑起来</h2>
+              <p>
+                老板 PPT 的三大关键词在这里不是目录标题，而是学习范式背后的支撑能力。对客户解释时，
+                先用“新资源、新伙伴、新工具”说人话，再在方案中对应到产品架构。
+              </p>
+            </div>
+          </div>
+
+          <div class="capability-list">
+            <article class="capability-row">
+              <div class="capability-row__index">
+                <span>01</span>
+                <i data-lucide="library-big"></i>
+              </div>
+              <div class="capability-row__copy">
+                <div class="capability-row__meta">对应 PPT 能力：资源重构</div>
+                <h3>新资源：从资源汇聚到可重组的知识网络</h3>
+                <p>
+                  资源不再只是静态收藏，而是可以被理解、关联、调用和重组的学习材料。课程、教材、实践、图书馆、
+                  国际合作资源进入同一个知识网络。
+                </p>
+                <div class="tag-row">
+                  <span>AI 知识库</span><span>垂域模型</span><span>元宇宙课程</span><span>虚拟仿真</span>
+                </div>
+              </div>
+              <div class="capability-row__evidence">
+                <strong>学校获得什么</strong>
+                <p>原有资源被盘活，课程和能力、项目、评价开始建立关系。</p>
+              </div>
+            </article>
+
+            <article class="capability-row">
+              <div class="capability-row__index">
+                <span>02</span>
+                <i data-lucide="bot"></i>
+              </div>
+              <div class="capability-row__copy">
+                <div class="capability-row__meta">对应 PPT 能力：超级学习智能体</div>
+                <h3>新伙伴：懂学校、懂专业、懂你的 AI 老师</h3>
+                <p>
+                  从单位专属升级为一人专属。智能体通过画像、Skill、长期记忆、知识库和权限策略，
+                  成为学生的 AI 学伴、教师的 AI 助教和学校的 AI 导师。
+                </p>
+                <div class="tag-row">
+                  <span>过程透明</span><span>记忆可续</span><span>知识溯源</span><span>多渠道接入</span>
+                </div>
+              </div>
+              <figure class="capability-row__visual">
+                <img src="assets/ai-training.webp" alt="AI 医疗训练场景" />
+              </figure>
+            </article>
+
+            <article class="capability-row">
+              <div class="capability-row__index">
+                <span>03</span>
+                <i data-lucide="blocks"></i>
+              </div>
+              <div class="capability-row__copy">
+                <div class="capability-row__meta">对应 PPT 能力：智能工具引擎</div>
+                <h3>新工具：从功能模块到可组装的学习引擎</h3>
+                <p>
+                  项目引擎、个性化学习引擎、图谱引擎、任务引擎、AI 编程引擎等不再孤立存在，
+                  而是按真实场景灵活组装，直接进入教学、实践、评价和管理流程。
+                </p>
+                <div class="tag-row">
+                  <span>项目引擎</span><span>图谱引擎</span><span>任务引擎</span><span>NoahCoder</span>
+                </div>
+              </div>
+              <figure class="capability-row__visual">
+                <img src="assets/noahcoder.webp" alt="NoahCoder 界面" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="construction">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">建设篇</p>
+              <h2>从一个真实学习问题开始，走到学校自己的未来学习中心</h2>
+              <p>
+                蓝皮书不能只给愿景，还要告诉学校怎么动手。建设路径应当是诊断、试点、共建、推广，而不是一次性堆平台。
+              </p>
+            </div>
+          </div>
+
+          <div class="construction-layout">
+            <ol class="timeline">
+              <li>
+                <span>01</span>
+                <div><strong>场景诊断</strong><p>确认一个真实学习问题，明确学生、教师和管理者各自要改变什么。</p></div>
+              </li>
+              <li>
+                <span>02</span>
+                <div><strong>单点试点</strong><p>先做一门课、一个专业或一个学院，让资源、AI 伙伴、工具和评价真正跑起来。</p></div>
+              </li>
+              <li>
+                <span>03</span>
+                <div><strong>学院或专业共建</strong><p>形成可复制场景，沉淀课程、知识库、智能体和数据指标。</p></div>
+              </li>
+              <li>
+                <span>04</span>
+                <div><strong>校级推广与运营</strong><p>统一底座、开放集成、持续运营，形成学校的个性化学习体系。</p></div>
+              </li>
+            </ol>
+
+            <aside class="risk-panel">
+              <span>建设中最容易出现的六个风险</span>
+              <ul>
+                <li>只建不用</li>
+                <li>重展示轻教学</li>
+                <li>过度定制</li>
+                <li>数据不通</li>
+                <li>教师负担增加</li>
+                <li>智能体不可控</li>
+              </ul>
+              <p>
+                每次沙龙讨论都应回到一个问题：它是否真的改变了学生的学习方式，而不只是增加了一套系统。
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cases" id="cases">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">案例篇</p>
+              <h2>案例不是荣誉墙，是客户对号入座的证据库</h2>
+              <p>
+                每个案例都必须回答：学校原来有什么问题、用了哪类学习范式、建设了哪些资源、AI
+                做什么、工具怎么进入流程、最后有什么成效。
+              </p>
+            </div>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card">
+              <img src="assets/case-ecust.webp" alt="华东理工大学未来学习空间首页" />
+              <div>
+                <span>校级 · 综合平台</span>
+                <h3>华东理工大学</h3>
+                <p>以“六维无界”重构学习空间，个性化、项目化、智能体和虚拟仿真形成统一入口。</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <img src="assets/case-bjut.webp" alt="北京工业大学未来学习中心首页" />
+              <div>
+                <span>试点高校 · 一生一案</span>
+                <h3>北京工业大学</h3>
+                <p>以学生为中心汇聚多源数据生成画像，把个体问题转化为学习任务，落实一生一案。</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <img src="assets/case-seu.webp" alt="东南大学在线未来学习中心首页" />
+              <div>
+                <span>智慧专业 · 智慧课程</span>
+                <h3>东南大学</h3>
+                <p>以 S·E·U 三大板块贯通探索、学习与成长，构建一站式个性化智慧学习生态。</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <img src="assets/case-jiangnan.webp" alt="江南大学未来学习中心首页" />
+              <div>
+                <span>千人千面 · 能力本位</span>
+                <h3>江南大学</h3>
+                <p>以学生为中心、能力为本位，整合智慧课程、微专业、项目实践与 AI 矩阵。</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <img src="assets/case-medical.webp" alt="医学未来学习中心首页" />
+              <div>
+                <span>学科垂域 · AI 老师</span>
+                <h3>医学未来学习中心</h3>
+                <p>以垂类大模型和医学知识库为底座，孵化模拟医院、AI 病人和 SP 培训智能体。</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <img src="assets/case-xidian.webp" alt="西电自主研学分中心首页" />
+              <div>
+                <span>自主学习 · 学研测评</span>
+                <h3>西安电子科技大学</h3>
+                <p>把课程学习、主题研讨、课程测试和学习评价串成一条成长主线。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="assessment">
+        <div class="section-shell">
+          <div class="assessment-layout">
+            <div>
+              <p class="section-kicker">成熟度自测</p>
+              <h2>学校现在走到哪一步？</h2>
+              <p>
+                这不是正式评估，而是一个帮助沙龙快速形成共识的小工具。勾选已经具备的能力，
+                看看学校更接近资源汇聚期、场景试点期还是能力融合期。
+              </p>
+              <div class="assessment-result">
+                <div class="score-ring" id="scoreRing"><strong id="scoreValue">0</strong><span>/ 6</span></div>
+                <div>
+                  <span>当前判断</span>
+                  <strong id="scoreLabel">资源汇聚期</strong>
+                  <p id="scoreHint">先把资源、入口和统一数据基础梳理清楚。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="assessment-list">
+              <label><input type="checkbox" value="1" /><span>已有统一学习入口和基础数据治理</span></label>
+              <label><input type="checkbox" value="1" /><span>课程、教材、题库等资源能够被结构化关联</span></label>
+              <label><input type="checkbox" value="1" /><span>已有个性化学习或学情画像的真实应用</span></label>
+              <label><input type="checkbox" value="1" /><span>项目化学习已经进入课程或专业培养</span></label>
+              <label><input type="checkbox" value="1" /><span>AI 助手能够结合学校知识库提供受控服务</span></label>
+              <label><input type="checkbox" value="1" /><span>学习过程可以形成评价证据并反哺教学</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--discussion" id="discussion">
+        <div class="section-shell">
+          <div class="section-heading section-heading--wide">
+            <div>
+              <p class="section-kicker">现场研讨</p>
+              <h2>今天不需要得出全部结论，但要先把问题问对</h2>
+              <p>
+                每组选择 2 至 3 个问题讨论，讨论结果可以直接沉淀到下一版蓝皮书的章节调整中。
+              </p>
+            </div>
+            <div class="discussion-timer" aria-label="研讨计时器">
+              <strong id="timerValue">10:00</strong>
+              <div>
+                <button class="icon-button" type="button" id="timerToggle" aria-label="开始计时">
+                  <i data-lucide="play"></i>
+                </button>
+                <button class="icon-button" type="button" id="timerReset" aria-label="重置计时">
+                  <i data-lucide="rotate-ccw"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="discussion-progress">
+            <span>已讨论 <strong id="discussedCount">0</strong> / 6</span>
+            <div class="progress-track"><span id="discussionProgress"></span></div>
+          </div>
+
+          <div class="question-grid" id="questionGrid">
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">01</span>
+              <strong>我们究竟是在卖平台，还是在卖一种新的学习方式？</strong>
+              <small>高层沟通</small>
+            </label>
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">02</span>
+              <strong>面对校领导时，最应该先讲哪个结果？</strong>
+              <small>价值表达</small>
+            </label>
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">03</span>
+              <strong>个性化、项目化、自主学习，哪一类最适合做第一批标杆？</strong>
+              <small>场景选择</small>
+            </label>
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">04</span>
+              <strong>如何把三大支撑能力翻译成学校听得懂、能验收的语言？</strong>
+              <small>产品翻译</small>
+            </label>
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">05</span>
+              <strong>哪些案例可以公开，哪些必须脱敏？</strong>
+              <small>案例合规</small>
+            </label>
+            <label class="question-card">
+              <input type="checkbox" />
+              <span class="question-card__index">06</span>
+              <strong>蓝皮书首发后，市场动作如何承接？</strong>
+              <small>发布转化</small>
+            </label>
+          </div>
+
+          <div class="action-strip">
+            <div>
+              <span>建议提交物</span>
+              <strong>沙龙结束后形成：章节优先级、案例授权清单、首发场景与首批目标客户。</strong>
+            </div>
+            <button class="button button--secondary" id="copyQuestions" type="button">
+              <i data-lucide="copy"></i><span>复制研讨题</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="section-shell footer__inner">
+          <p>未来学习中心蓝皮书 · 公司沙龙共创稿</p>
+          <strong>为学校搭建千校千面的个性化未来学习中心。</strong>
+        </div>
+      </footer>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="assets/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
